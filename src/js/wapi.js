@@ -1997,8 +1997,8 @@ window.WAPI._sendSticker = async function (sticker, chatId, metadata) {
 		stick.__x_initialized = false;
 		stick.__x_mediaData.mediaStage = 'INIT';
 		stick.mimetype = 'image/webp';
-		stick.height = (metadata && metadata.height) ?  metadata.height : 512;
-		stick.width = (metadata && metadata.width) ?  metadata.width : 512;
+		stick.height = (metadata && metadata.height) ?  metadata.height : 1000;
+		stick.width = (metadata && metadata.width) ?  metadata.width : 1000;
 		await stick.initialize();
 		return await stick.sendToChat(chat);
 };
